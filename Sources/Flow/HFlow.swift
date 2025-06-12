@@ -140,7 +140,7 @@ extension HFlow: Animatable where Content == EmptyView {
     public typealias AnimatableData = EmptyAnimatableData
 }
 
-extension HFlow: Layout, Sendable where Content == EmptyView {
+extension HFlow: Layout where Content == EmptyView {
     /// Creates a horizontal flow with the given spacing and vertical alignment.
     ///
     /// - Parameters:
@@ -274,3 +274,5 @@ extension HFlow: Layout, Sendable where Content == EmptyView {
         HFlowLayout.layoutProperties
     }
 }
+
+extension HFlow: @unchecked Sendable where Content == EmptyView {}
