@@ -273,3 +273,6 @@ extension VFlow: Layout, Sendable where Content == EmptyView {
         VFlowLayout.layoutProperties
     }
 }
+
+extension VFlow: @unchecked Sendable where Content == EmptyView {}
+
